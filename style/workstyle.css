@@ -84,11 +84,15 @@ h1 {
 }
 
 .rotating-slider ul.slides li:nth-of-type(4) {
-  background: #d6869e;
+  color: black;
+  background: pink;
+}
+.rotating-slider ul.slides li:nth-of-type(4) a {
+  color: black;
 }
 
 .rotating-slider ul.slides li:nth-of-type(5) {
-  background: pink;
+  background: #d6869e;
 }
 
 .rotating-slider ul.slides li:nth-of-type(6) {

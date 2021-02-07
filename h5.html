@@ -1,25 +1,33 @@
-<div class="main">
-  <iframe src="http://h5.mytimerec.com/" class="frame">h5</iframe>
-</div>
-<!-- device detection -->
-<script>
-  if (
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    )
-  ) {
-    window.location = "http://h5.mytimerec.com/";
-  }
-</script>
-<style>
-  .main {
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-  }
+<head>
+  <link
+    rel="icon"
+    href="./resources/Pelfusion-Long-Shadow-Media-Settings.ico"
+  />
+</head>
+<body>
+  <div class="main">
+    <iframe src="http://h5.mytimerec.com/" class="frame">h5</iframe>
+  </div>
+  <!-- device detection -->
+  <script>
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      window.location = "http://h5.mytimerec.com/";
+    }
+  </script>
+  <style>
+    .main {
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+    }
 
-  .frame {
-    width: min(414px, 100vw);
-    height: min(736px, 100vh);
-  }
-</style>
+    .frame {
+      width: min(414px, 100vw);
+      height: min(736px, 100vh);
+    }
+  </style>
+</body>
