@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  body{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+  }
+
+  nav{
+    position: absolute;
+    top: 0.5vh;
+    left: 3vw;
+    color: black;
+    transform-style: preserve-3d;
+  }
+
+  a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 4;
+    color: rgb(143, 134, 153);
+    text-decoration: none;
+  }
+  
+  a:hover{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: rgb(53, 53, 53);
+  }
+
+  /* The animation code */
+@keyframes move-up {
+  0%   {top: -50vh; height: 150vh; width: 100vw;}
+  100% {top: 0vh; height: 100vh; width: 100vw;}
+}
+
+  .entering{
+    background: url("../resources/path.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    animation-name: move-up;
+    animation-duration: 5s;
+  }
+  .bg{
+    width: 100%;
+    height: 100%;
+    
+    /* transform-style: preserve-3d; */
+  }
+
+  .display{
+    position: absolute;
+    top: 2.5vh;
+    width: 100vw;
+    text-align: center;
+  }
+  .big-text{
+    font-size: 4rem;
+    font-family: "Lobster", cursive;
+    color: rgb(90, 89, 89);
+  }
+
+  .swiper{
+    margin-top: 1rem;
+    background: rgb(211, 211, 211);
+    width: 100%;
+    height: 35vh;
+    min-width: 320px;
+    opacity: 0.25;
+    color: black;
+  }
