@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 body {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background-color: whitesmoke;
 }
 
@@ -17,7 +19,7 @@ body {
     width: 100vw;
   }
   100% {
-    top: 0vh;
+    top: 10vh;
     height: 100vh;
     width: 100vw;
   }
@@ -36,17 +38,24 @@ body {
   background: url("../resources/path.jpg");
   background-size: cover;
   position: absolute;
-  top: 0vh;
+  top: 11vh;
   left: 0vw;
   width: 100vw;
   height: 100vh;
   animation-name: move-up;
   animation-duration: 5s;
   z-index: -1;
+  opacity: 0.65;
+}
+h1 {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size: 3rem;
 }
 
 /* Slider style*/
 .slider {
+  padding-top: 10px;
   opacity: 0.9;
   font-family: "Heebo", sans-serif;
   font-weight: 400;
