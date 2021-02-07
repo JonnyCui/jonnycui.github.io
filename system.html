@@ -1,0 +1,87 @@
+<body>
+  <h1>TimeRec Management System</h1>
+  <p>
+    A low-coupling system built using
+    <b>Java Spring MVC + MyBatis Framework: </b>
+    <em> Spring Cloud Greenwich.SR3, OAuth2, Alibaba cloud services</em>
+  </p>
+  <p>the front-end is developed using <b>Vue.js and Element-ui</b>.</p>
+
+  <h2>
+    Due to organisation protocol and security concern, can only show some
+    screenshots of the web application
+  </h2>
+
+  <hr />
+  <h2>Login page</h2>
+  <img id="login" src="./resources/ture.JPG" />
+  <br />
+  <hr />
+  <h2>Home page</h2>
+  <img id="home" src="./resources/a.JPG" />
+  <br />
+  <hr />
+
+  <h3>The system has the following characteristics:</h3>
+  <ul>
+    <li>
+      Front-end and back-end separation architecture, client and server pure
+      Token interaction;
+    </li>
+    <li>
+      The authentication server is separated from the resource server to
+      facilitate access to its own microservice system;
+    </li>
+    <li>
+      Microservice protection, the resources requested by the client can only be
+      obtained through the microservice gateway;
+    </li>
+    <li>
+      Integrate Spring Boot Admin to monitor microservices in multiple
+      dimensions;
+    </li>
+    <li>
+      Integrate Nacos service governance and centralized configuration
+      management;
+    </li>
+    <li>The gateway integrates Sentinel flow control;</li>
+    <li>
+      Front-end and back-end request parameter verification, Excel import and
+      export, code generator.
+    </li>
+    <li>
+      Using MyBatis instead of JDBC to access MySQL databases with quartz
+      automatic scheduling analysis data in the server and integrate Apache
+      Echart for data visulisation
+    </li>
+  </ul>
+</body>
+<style>
+  * {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+  }
+  body {
+    padding-bottom: 50px;
+  }
+
+  li {
+    text-align: left !important;
+  }
+  p {
+    margin: 1% 10%;
+    width: 80%;
+  }
+  h2 {
+    margin: 5% 25%;
+    width: 50%;
+  }
+  #login {
+    width: 90vw;
+    height: auto;
+  }
+  #home {
+    width: 90vw;
+    height: auto;
+  }
+</style>

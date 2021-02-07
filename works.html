@@ -8,26 +8,121 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/resources/smile_emo_emoji_emoticon_icon_178904.ico">
+    <link
+      rel="icon"
+      href="/resources/smile_emo_emoji_emoticon_icon_178904.ico"
+    />
+
+    <!-- Import JQuery Slider stylesheet-->
+    <link rel="stylesheet" href="./style/rotating-slider.min.css" />
+
     <title>Jonny's Portfolio</title>
   </head>
   <body>
-    <main>
-        <section class="entering">
-            
-        </section>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" 
-            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" 
-            crossorigin="anonymous">
-         gsap.fromTo(".swiper", { opacity: 0 }, { opacity: 1, duration: 1.5, delay: 5 });
+    <section class="entering"></section>
+    <section class="slider">
+      <div class="rotating-slider">
+        <ul class="slides">
+          <li>
+            <div class="inner">
+              <h2>Timerec - website and mobile app</h2>
+              <br />
+              <p>Official Website for Timerec</p>
+              <br />
+              <a href="https://timerec.co.nz/">timerec.co.nz</a>
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <h2>TimeRec Management System</h2>
+              <br />
+              <p>TimeRec Management System for Timerec Ltd internal use only</p>
+              <br />
+              <a href="system.html">read more</a>
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <h2>covid19 updates</h2>
+              <br />
+              <p>
+                Case number updates and statistical charts, project shut down on
+                7th May 2020 due to client's request
+              </p>
+              <br />
+              <a href="http://covid19.mytimerec.com/">covid19.mytimerec.com</a>
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <h2>KIZUNA - UI&UX Prototype</h2>
+              <br />
+              <p>
+                Designed UI components using Adobe Illustrator and developed UX
+                prototype using Adobe XD for a social media management platform
+              </p>
+              <br />
+              <a
+                href="https://xd.adobe.com/view/8e100fa6-ddd4-4a96-81f4-a97db2e52cb3-db43/?fullscreen"
+                >link to prototype</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <h2>Jellow Studio - website and mini program</h2>
+              <br />
+              <p>
+                Designed and developed website using WIX builder, developed
+                backend API's for e-commerce web app
+              </p>
+              <br />
+              <a href="https://www.jellow.co.nz/">jellow.co.nz</a>
+            </div>
+          </li>
+          <li>
+            <div class="inner">
+              <h2>POP h5</h2>
+              <br />
+              <p>mobile web and application services</p>
+              <br />
+              <a href="./h5.html">POP h5 web</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    >
+      gsap.fromTo(".slider", { opacity: 0 }, { opacity: 1, duration: 1.5, delay: 5 });
+    </script>
+    <!-- JQuery Slider -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.rotating-slider.min.js"></script>
+    <script>
+      $(function () {
+        $(".rotating-slider").rotatingSlider({
+          slideHeight: Math.min(280, window.innerWidth - 80),
+          slideWidth: Math.min(500, window.innerWidth - 80),
+        });
+      });
     </script>
     <!-- device detection -->
     <script>
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        window.location="http://jonny-cui.simplesite.com/448156858"
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        // window.location = "http://jonny-cui.simplesite.com/448156858";
       }
     </script>
-</body>
-    
+  </body>
 </html>
