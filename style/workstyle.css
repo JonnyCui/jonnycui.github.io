@@ -29,6 +29,9 @@ body {
     margin-top: -50vh;
     opacity: 0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity: 0.8;
   }
@@ -38,7 +41,7 @@ body {
   background: url("../resources/path.jpg");
   background-size: cover;
   position: absolute;
-  top: 11vh;
+  top: 10vh;
   left: 0vw;
   width: 100vw;
   height: 100vh;
@@ -61,7 +64,7 @@ h1 {
   font-weight: 400;
   overflow: hidden;
   animation-name: fading;
-  animation-duration: 5s;
+  animation-duration: 9s;
 }
 
 .rotating-slider ul.slides li {
