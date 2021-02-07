@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  body{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+  }
+
+  /* The animation code */
+@keyframes move-up {
+  0%   {top: -50vh; height: 150vh; width: 100vw;}
+  100% {top: 0vh; height: 100vh; width: 100vw;}
+}
+
+  .entering{
+    background: url("../resources/path.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    animation-name: move-up;
+    animation-duration: 5s;
+  }
+  .bg{
+    height: auto;
+    /* transform-style: preserve-3d; */
+  }
+
