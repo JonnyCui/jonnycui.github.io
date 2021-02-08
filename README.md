@@ -1,3 +1,4 @@
 # jychoice.github.io
-personal website
+Personal website developed using HTML5, CSS and Javascript
+animation using js library: GSAP and Jquery
 link: https://jychoice.github.io/
