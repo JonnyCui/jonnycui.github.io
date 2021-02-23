@@ -8,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: whitesmoke;
+  background-color: rgb(240, 240, 240);
 }
 
 /* The animation code */
@@ -19,7 +19,7 @@ body {
     width: 100vw;
   }
   100% {
-    top: 10vh;
+    top: max(10vh, 15.9vw);
     height: 100vh;
     width: 100vw;
   }
@@ -38,10 +38,12 @@ body {
 }
 
 .entering {
-  background: url("../resources/path.jpg");
+  background-image: url("../resources/path.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
-  top: 10vh;
+  top: max(10vh, 16vw);
   left: 0vw;
   width: 100vw;
   height: 100vh;
