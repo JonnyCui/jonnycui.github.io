@@ -1,4 +1,9 @@
 {
     "liveServer.settings.port": 5501,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "editor.linkedEditing": true,
+    "cSpell.words": [
+        "Jonny",
+        "Jonny's"
+    ]
 }

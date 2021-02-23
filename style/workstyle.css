@@ -33,7 +33,7 @@ body {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -58,44 +58,54 @@ h1 {
 
 /* Slider style*/
 .slider {
-  opacity: 0.9;
+  opacity: 0.85;
   font-family: "Heebo", sans-serif;
   font-weight: 400;
   overflow: hidden;
   animation-name: fading;
-  animation-duration: 9s;
+  animation-duration: 6s;
 }
 
 .rotating-slider ul.slides li {
-  color: #fff;
+  color: #ffffff;
+}
+
+.rotating-slider ul.slides li a {
+  color: #5a5a5a;
 }
 
 .rotating-slider ul.slides li:nth-of-type(1) {
-  background: #e96c4d;
+  background: linear-gradient(#fd7350, rgb(245, 245, 245, 0.65));
 }
 
 .rotating-slider ul.slides li:nth-of-type(2) {
-  background: rgb(58, 56, 56);
+  color: #ffffff;
+  background: linear-gradient(rgb(59, 59, 59), rgb(245, 245, 245, 0.65));
 }
 
 .rotating-slider ul.slides li:nth-of-type(3) {
-  background: rgb(83, 83, 206);
+  background: linear-gradient(rgb(108, 108, 245), rgb(245, 245, 245, 0.65));
 }
 
 .rotating-slider ul.slides li:nth-of-type(4) {
-  color: black;
-  background: pink;
-}
-.rotating-slider ul.slides li:nth-of-type(4) a {
-  color: black;
+  color: #888888;
+  background: linear-gradient(rgb(255, 192, 206), rgb(245, 245, 245, 0.65));
 }
 
 .rotating-slider ul.slides li:nth-of-type(5) {
-  background: #d6869e;
+  background: linear-gradient(rgb(255, 133, 133), rgb(245, 245, 245, 0.65));
 }
 
 .rotating-slider ul.slides li:nth-of-type(6) {
-  background: #a54aa5;
+  background: linear-gradient(rgb(255, 140, 73), rgb(245, 245, 245, 0.65));
+}
+.rotating-slider ul.slides li:nth-of-type(7) {
+  color: #414141;
+  background: linear-gradient(#e2da6c, rgb(245, 245, 245, 0.65));
+}
+.rotating-slider ul.slides li:nth-of-type(8) {
+  color: #414141;
+  background: linear-gradient(#76e6b7, rgb(245, 245, 245, 0.65));
 }
 
 .rotating-slider ul.slides li .inner {
